@@ -10,7 +10,7 @@ import java.util.Arrays;
 public class Ex02SpringDiApplication {
 
 	//자바 빈을 생성하는 방법 2가지
-	//1. @Confiration + @Bean
+	//1. @Configuration + @Bean
 	//2. @Component + @Autowired
 	//  1) 필드(field,멤버변수) 주입 : 일반적인 방법
 	//  2) 수정자(setter) 주입

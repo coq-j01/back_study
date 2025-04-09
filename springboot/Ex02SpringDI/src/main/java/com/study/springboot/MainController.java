@@ -5,7 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-// @Controller : HTTP 요펑을 처리하는 컨트롤 클래스이다.
+// @Controller : HTTP 요청을 처리하는 컨트롤 클래스이다.
 @Controller
 public class MainController {
     @GetMapping("/") // GET요청을 처리하는 메소드 위에 선언한다.
@@ -19,7 +19,7 @@ public class MainController {
         return"테스트입니다.";
     }
 
-    // 사용자 정의 빈을 주입받는 방법 3가지ㅏ
+    // 사용자 정의 빈을 주입받는 방법 3가지
     // 1. 필드 주입
     @Autowired
     private Member member1;
