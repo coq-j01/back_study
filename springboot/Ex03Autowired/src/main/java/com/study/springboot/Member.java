@@ -16,7 +16,6 @@ public class Member {
         this.iCard = iCard;
     }
     //Getter/Setter
-
     public String getName() {
         return name;
     }
