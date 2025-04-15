@@ -1,7 +1,9 @@
 package com.study.springboot;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+//import org.springframework.web.bind.annotation.ResponseBody;
 
 //Request Mapping : HTTP 요청에 대한 경로와 응답 메소드를 정의한다.
 //@GetMapping : 사용자의 HTTP Get요청에 대한 응답 경로와 메서드를 정의합니다.
@@ -25,7 +27,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class MainController {
-    @GetMapping("/")
+    //@GetMapping("/")
+    @RequestMapping(value="/", method = RequestMethod.GET)
     //@ResponseBody //JSON(XML)로 응답할 때 주로 사용
     public String main() {
         return "index.html"; //index.html파일로 응답

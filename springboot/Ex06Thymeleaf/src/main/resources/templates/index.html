@@ -11,9 +11,12 @@
 
   th:text : innerText 출력 <br>
   <p th:text="텍스트입니다.">innerText</p>
+  <p th:text="'Hello <b>Spring<b>'">innerText</p>
   <p th:text="${name_text}">innerText</p>
+
   th:utext : innerHTML 출력 <br>
-  <p th:text="${name_html}">innerText</p>
+  <p th:utext="'Hello <b>Spring<b>'">innerText</p>
+  <p th:utext="${name_html}">innerText</p>
 
   문자열 연결 <br>
   <p th:text="'Welcome,' + ${ name_text } ">연결된 문자열</p>
