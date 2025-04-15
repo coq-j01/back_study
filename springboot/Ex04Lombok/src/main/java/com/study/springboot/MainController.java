@@ -13,6 +13,8 @@ public class MainController {
     @ResponseBody
     public String main(){
         System.out.println("member1.getAge() = "+member1.getAge());
+        member2.setName("홍길동");
+        System.out.println("member2.getName() = "+member2.getName());
         System.out.println("member2.getAge() = "+member2.getAge());
 
         return "롬복 예제 서버입니다.";
