@@ -18,6 +18,9 @@
   <p th:utext="'Hello <b>Spring<b>'">innerText</p>
   <p th:utext="${name_html}">innerText</p>
 
+  th:with으로 변수 넣기
+  <p th:with="text1=${'타임리프'}" th:text="${text1}"></p>
+
   문자열 연결 <br>
   <p th:text="'Welcome,' + ${ name_text } ">연결된 문자열</p>
 
