@@ -17,8 +17,8 @@ public class MainController {
         return "index"; //index.html이 아닌 index라고만 써야함
                         //index.html 파일을 렌더해서 내려줌
     }
-    @GetMapping("/index1")
-    public String index1(Model model){
+    @GetMapping("/index")
+    public String index(Model model){
         // Model 클래스 : 스프링에서 데이터를 담아서 전달하는 용도의 클래스 객체
         model.addAttribute("name_text","<ins>홍길동</ins>");
         model.addAttribute("name_html","<ins>홍길동</ins>");
