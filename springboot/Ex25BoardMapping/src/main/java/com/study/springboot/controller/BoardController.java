@@ -66,7 +66,7 @@ public class BoardController {
         model.addAttribute("dto",dto);
 
         //댓글 목록 조회
-        List<ReplyResponseDto> replyList = replyService.findAllByReplyBoardIdx( boardIdx );
+        List<ReplyResponseDto> replyList = replyService.findAllByBoardIdx( boardIdx );
         model.addAttribute("replyList", replyList);
 
         return "contentForm";
