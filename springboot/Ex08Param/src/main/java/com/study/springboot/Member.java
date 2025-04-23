@@ -12,8 +12,12 @@ import org.springframework.stereotype.Component;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Member {
-    @Value("username")
-    String username;
-    @Value("password")
+//    @Value("username")
+//    String username;
+//    @Value("password")
+//    String password;
+@Value ("${my.username}")
+String username;
+    @Value("${my.password}")
     String password;
 }
